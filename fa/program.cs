@@ -97,10 +97,10 @@ namespace fans
         a.Transitions['1'] = d;
         b.Transitions['0'] = a;
         b.Transitions['1'] = c;
-        c.Transitions['0'] = b;
-        c.Transitions['1'] = d;
-        d.Transitions['0'] = a;
-        d.Transitions['1'] = c;
+        c.Transitions['0'] = d;
+        c.Transitions['1'] = b;
+        d.Transitions['0'] = c;
+        d.Transitions['1'] = a;
     }
     public bool? Run(IEnumerable<char> s)
     {
